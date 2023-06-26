@@ -2,30 +2,46 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <h1 id="title">Survey form</h1>
-    <p id="description">We kindly request your assistance in making improvements. Your opinion holds great importance to us!</p>
-    <form action="" id="survey-form">
-      <label id="name-label" for="name">Name: <input type="text" id="name" name="name" placeholder="Jhon" required /></label>
-      <label id="last-name-label" for="last-name">Last name: <input type="text" id="last-name" name="last-name" placeholder="Smith" required /></label>
-      <label id="email-label" for="email">Email: <input type="email" id="email" name="email" placeholder="example@example.com" required /></label>
-      <label id="number-label" for="number">Age: <input type="number" id="number" min="16" max="120" name="age" placeholder="33" required /></label>
-      <select name="dropdown" id="dropdown">
-        <option value="personal-use">For personal use</option>
-        <option value="business-use">For business use</option>
-      </select>
-      <label for="terms-and-conditions"><input type="checkbox" name="terms" id="terms-and-conditions" value="terms" required />You are agree with the <a href="#" target="_blank">terms and conditions</a></label>
-      <label for="privacy-politics"><input type="checkbox" name="privacy" id="privacy-politics" value="privacy" required /> Also you are agree with the <a href="#" target="_blank">privacy politics</a></label>
-      <label for="cat"><input type="radio" name="cat-dog-fish-bird" id="cat" value="cat"> </label>
-      <label for="dog"><input type="radio" name="cat-dog-fish-bird" id="dog" value="dog"> </label>
-      <label for="fish"><input type="radio" name="cat-dog-fish-bird" id="fish" value="fish"> </label>
-      <label for="bird"><input type="radio" name="cat-dog-fish-bird" id="bird" value="bird"> </label>
-      <textarea name="reason" id="reason" cols="50" rows="5" placeholder="What was the main reason to trust in us?"></textarea>
-      <input id="submit" type="submit" value="submit">
-    </form>
+    <div class="just-a-container">
+      <section>
+        <div class="div-section">
+          <h1>Survey Form</h1>
+          <p>We kindly request your assistance in making improvements</p>
+          <p id="description"><em>Your opinion holds great importance to us!</em></p>
+        </div>
+        <form action="" id="survey-form">
+          <!--Owner of the pet-->
+          <fieldset class="owner">
+            <label id="name-label" for="name">Name: <input type="text" id="name" name="name" placeholder="Jhon" required /></label>
+            <label id="last-name-label" for="last-name">Last name: <input type="text" id="last-name" name="last-name" placeholder="Smith" required /></label>
+            <label id="email-label" for="email">Email: <input type="email" id="email" name="email" placeholder="example@example.com" required /></label>
+            <label id="number-label" for="number">Age: <input type="number" id="number" min="16" max="120" name="age" placeholder="33" required /></label>
+          </fieldset>
+          <!--They aren't just animals, they are our patients-->
+          <fieldset class="patient">
+            <select name="dropdown" id="dropdown">
+              <option value="personal-use">For personal use</option>
+              <option value="business-use">For business use</option>
+            </select>
+          </fieldset>
+          <!--Buttons-->
+          <fieldset class="buttons">
+            <label for="terms-and-conditions"><input type="checkbox" name="terms" id="terms-and-conditions" value="terms" required />You are agree with the <a href="#" target="_blank">terms and conditions</a></label>
+            <label for="privacy-politics"><input type="checkbox" name="privacy" id="privacy-politics" value="privacy" required /> Also you are agree with the <a href="#" target="_blank">privacy politics</a></label>
+            <label for="cat"><input type="radio" name="cat-dog-fish-bird" id="cat" value="cat"> </label>
+            <label for="dog"><input type="radio" name="cat-dog-fish-bird" id="dog" value="dog"> </label>
+            <label for="fish"><input type="radio" name="cat-dog-fish-bird" id="fish" value="fish"> </label>
+            <label for="bird"><input type="radio" name="cat-dog-fish-bird" id="bird" value="bird"> </label>
+            <textarea name="reason" id="reason" cols="50" rows="5" placeholder="Why you trust in us?"></textarea>
+          </fieldset>
+          <input id="submit" type="submit" value="submit">
+        </form>
+      </section>
+    </div>
   </body>
 </html>
