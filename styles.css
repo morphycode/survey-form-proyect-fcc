@@ -34,18 +34,18 @@ section {
 }
 
 .div-section {
-    height: 15%;
+    height: 14%;
 }
 
 h1 {
     font-size: 2.5rem;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    margin: 50px auto;
+    margin: 40px auto;
 }
 
 #description {
     font-size: 2rem;
-    margin: 0 0 50px 0;
+    margin: 0 0 40px 0;
 }
 
 p {
@@ -55,8 +55,8 @@ p {
 form{
     color: white;
     background-color: rgb(66, 66, 66);
-    width: 750px;
-    height: 75%;
+    width: 90%;
+    height: 80%;
     margin: auto;
     border-radius: 30px;
     border: 5px solid rgb(34, 34, 34);
