@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <section>
+    <section style="padding: 50px;">
       <!--Title h1 and description-->
       <h1 id="title">Survey Form</h1>
       <p id="description"><em>Could you lend us a hand to improve things?</em></p>
@@ -36,7 +36,11 @@
         <!--inputs type radio-->
         <fieldset class="quality-service">
           <figcaption>Are you satisface with our service?</figcaption>
-          <label for="personal-computer"><input type="radio" name="" id="" value="personal-computer" checked> Personal Computer</label>
+          <label for="excelent"><input type="radio" name="excelent-good-notbad-dislike-bad" id="excelent" value="excelent" checked><img src="" alt="Very good" /></label>
+          <label for="good"><input type="radio" name="excelent-good-notbad-dislike-bad" id="good" value="good"><img src="" alt="Good" /></label>
+          <label for="notbad"><input type="radio" name="excelent-good-notbad-dislike-bad" id="notbad" value="notbad"><img src="" alt="Not bad" /></label>
+          <label for="dislike"><input type="radio" name="excelent-good-notbad-dislike-bad" id="dislike" value="dislike"><img src="" alt="Could be better" /></label>
+          <label for="bad"><input type="radio" name="excelent-good-notbad-dislike-bad" id="bad" value="bad"><img src="" alt="Bad" /></label>
         </fieldset>
         <!--Reason to belive-->
         <textarea name="reason" id="reason" cols="20" rows="15" placeholder=""></textarea>

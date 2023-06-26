@@ -1,11 +1,12 @@
 * {
     padding: 0;
     margin: 0;
+    color: #fff;
 }
 
 body {
     /*background: linear-gradient(90deg, #21f, #71f);*/
-    background: linear-gradient(135deg, #000, rgb(6, 66, 6), #000);
+    background: linear-gradient(135deg, #000, rgb(6, 96, 6), #000);
     background-repeat: no-repeat;
     width: 100%;
     height: 200vh;
@@ -19,7 +20,7 @@ body {
 section {
     width: 60%;
     height: 80%;
-    background-color: rgba(40,100,40,45%);
+    background-color: rgba(60, 120, 60, 40%);
     /* box-shadow: 0 0 300px #a1a1a1; */
     margin: 0 auto;
     padding: auto;
@@ -30,7 +31,7 @@ h1 {
     text-align: center;
     font-size: 2.5rem;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    padding-top: 50px;
+    padding-bottom: 10px;
 }
 
 #description {
@@ -66,7 +67,7 @@ label {
 /* Checkbox button style */
 label[for="terms-and-conditions"] {
     text-align: center;
-    margin: auto;
+    margin: 25px auto 0 auto;
 }
 
 a {
