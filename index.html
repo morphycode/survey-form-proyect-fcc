@@ -10,11 +10,15 @@
   <body>
     <div class="just-a-container">
       <section>
+        <!--Title h1 and description-->
         <div class="div-section">
-          <h1>Survey Form</h1>
+          <h1 id="title">Survey Form</h1>
           <p id="description"><em>Could you lend us a hand to improve things?</em></p>
         </div>
+
+        <!--Survey Form-->
         <form action="" id="survey-form">
+
           <!--Owner of the pet-->
           <fieldset class="owner">
             <label id="name-label" for="name">Name: <input type="text" id="name" name="name" placeholder="Jhon" required /></label>
@@ -22,6 +26,7 @@
             <label id="email-label" for="email">Email: <input type="email" id="email" name="email" placeholder="example@example.com" required /></label>
             <label id="number-label" for="number">Age: <input type="number" id="number" min="16" max="120" name="age" placeholder="33" required /></label>
           </fieldset>
+
           <!--They aren't just animals, they are our patients-->
           <fieldset class="patient">
             <select name="dropdown" id="dropdown">
@@ -29,17 +34,24 @@
               <option value="business-use">For business use</option>
             </select>
           </fieldset>
-          <!--Buttons-->
-          <fieldset class="buttons">
-            <label for="terms-and-conditions"><input type="checkbox" name="terms" id="terms-and-conditions" value="terms" required />You are agree with the <a href="#" target="_blank">terms and conditions</a></label>
+
+          <!--conditions-->
+          <fieldset class="conditions">
+            <label for="terms-and-conditions"><input type="checkbox" name="terms" id="terms-and-conditions" value="terms" required /> You are agree with the <a href="#" target="_blank">terms and conditions</a></label>
             <label for="privacy-politics"><input type="checkbox" name="privacy" id="privacy-politics" value="privacy" required /> Also you are agree with the <a href="#" target="_blank">privacy politics</a></label>
-            <label for="cat"><input type="radio" name="cat-dog-fish-bird" id="cat" value="cat"> </label>
-            <label for="dog"><input type="radio" name="cat-dog-fish-bird" id="dog" value="dog"> </label>
-            <label for="fish"><input type="radio" name="cat-dog-fish-bird" id="fish" value="fish"> </label>
-            <label for="bird"><input type="radio" name="cat-dog-fish-bird" id="bird" value="bird"> </label>
-            <textarea name="reason" id="reason" cols="50" rows="5" placeholder="Why you trust in us?"></textarea>
           </fieldset>
-          <input id="submit" type="submit" value="submit">
+
+          <!--inputs type radio-->
+          <fieldset class="nose">
+            <label for="personal-computer"><input class="inline" type="radio" name="pc-laptop-smartphone-itdevices" id="personal-computer" value="personal-computer"> Personal Computer</label>
+            <label for="laptop"><input class="inline" type="radio" name="pc-laptop-smartphone-itdevices" id="laptop" value="laptop"> Laptop</label>
+            <label for="smartphone"><input class="inline" type="radio" name="pc-laptop-smartphone-itdevices" id="smartphone" value="smartphone"> Smartphone</label>
+            <label for="itdevices"><input class="inline" type="radio" name="pc-laptop-smartphone-itdevices" id="itdevices" value="itdevices">Other IT devices (smartwatch, home appliances...)</label>
+          </fieldset>
+
+          <!--Reason to belive-->
+          <textarea name="reason" id="reason" cols="20" rows="15" placeholder=""></textarea>
+          <input id="submit" type="submit" value="Submit">
         </form>
       </section>
     </div>
