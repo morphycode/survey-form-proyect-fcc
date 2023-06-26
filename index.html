@@ -8,52 +8,45 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <div class="just-a-container">
-      <section>
-        <!--Title h1 and description-->
-        <div class="div-section">
-          <h1 id="title">Survey Form</h1>
-          <p id="description"><em>Could you lend us a hand to improve things?</em></p>
-        </div>
-
-        <!--Survey Form-->
-        <form action="" id="survey-form">
-
-          <!--Owner of the pet-->
-          <fieldset class="owner">
-            <label id="name-label" for="name">Name: <input type="text" id="name" name="name" placeholder="Jhon" required /></label>
-            <label id="last-name-label" for="last-name">Last name: <input type="text" id="last-name" name="last-name" placeholder="Smith" required /></label>
-            <label id="email-label" for="email">Email: <input type="email" id="email" name="email" placeholder="example@example.com" required /></label>
-            <label id="number-label" for="number">Age: <input type="number" id="number" min="16" max="120" name="age" placeholder="33" required /></label>
-          </fieldset>
-
-          <!--They aren't just animals, they are our patients-->
-          <fieldset class="patient">
+    <section>
+      <!--Title h1 and description-->
+      <h1 id="title">Survey Form</h1>
+      <p id="description"><em>Could you lend us a hand to improve things?</em></p>
+      <!--Survey Form-->
+      <form action="" id="survey-form">
+        <!--user-->
+        <fieldset class="user">
+          <figcaption>First, we need some data to indetified you:</figcaption>
+          <label id="name-label" for="name">Fullname: <input type="text" id="name" name="fullname" placeholder="Jhon Smith" required /></label>
+          <label id="email-label" for="email">Email: <input type="email" id="email" name="email" placeholder="example@example.com" required /></label>
+          <label id="number-label" for="number">Age: <input type="number" id="number" min="16" max="120" name="age" placeholder="33" value="age" required /></label>
+        </fieldset>
+        <!--Products-->
+        <fieldset class="product">
+          <label>What product did you purchase from us? 
             <select name="dropdown" id="dropdown">
-              <option value="personal-use">For personal use</option>
-              <option value="business-use">For business use</option>
+              <option value="">(Select a product)</option>
+              <option value="personal-computer">Personal Computer</option>
+              <option value="laptop">Laptop</option>
+              <option value="smartphone">Smartphone</option>
+              <option value="iotdevice">IoT device</option>
             </select>
-          </fieldset>
-
-          <!--conditions-->
-          <fieldset class="conditions">
-            <label for="terms-and-conditions"><input type="checkbox" name="terms" id="terms-and-conditions" value="terms" required /> You are agree with the <a href="#" target="_blank">terms and conditions</a></label>
-            <label for="privacy-politics"><input type="checkbox" name="privacy" id="privacy-politics" value="privacy" required /> Also you are agree with the <a href="#" target="_blank">privacy politics</a></label>
-          </fieldset>
-
-          <!--inputs type radio-->
-          <fieldset class="nose">
-            <label for="personal-computer"><input class="inline" type="radio" name="pc-laptop-smartphone-itdevices" id="personal-computer" value="personal-computer"> Personal Computer</label>
-            <label for="laptop"><input class="inline" type="radio" name="pc-laptop-smartphone-itdevices" id="laptop" value="laptop"> Laptop</label>
-            <label for="smartphone"><input class="inline" type="radio" name="pc-laptop-smartphone-itdevices" id="smartphone" value="smartphone"> Smartphone</label>
-            <label for="itdevices"><input class="inline" type="radio" name="pc-laptop-smartphone-itdevices" id="itdevices" value="itdevices">Other IT devices (smartwatch, home appliances...)</label>
-          </fieldset>
-
-          <!--Reason to belive-->
-          <textarea name="reason" id="reason" cols="20" rows="15" placeholder=""></textarea>
+          </label>
+        </fieldset>
+        <!--inputs type radio-->
+        <fieldset class="quality-service">
+          <figcaption>Are you satisface with our service?</figcaption>
+          <label for="personal-computer"><input type="radio" name="" id="" value="personal-computer" checked> Personal Computer</label>
+        </fieldset>
+        <!--Reason to belive-->
+        <textarea name="reason" id="reason" cols="20" rows="15" placeholder=""></textarea>
+        <!--conditions-->
+        <fieldset class="conditions">
+          <label for="terms-and-conditions"><input type="checkbox" name="terms" id="terms-and-conditions" value="terms" required /> You are agree with the <a href="#" target="_blank">terms and conditions</a> and the <a href="#" target="_blank">privacy politics</a></label>
+          <!--Send-->
           <input id="submit" type="submit" value="Submit">
-        </form>
-      </section>
-    </div>
+        </fieldset>
+      </form>
+    </section>
   </body>
 </html>

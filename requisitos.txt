@@ -24,3 +24,5 @@ Fulfill the user stories and pass all the tests below to complete this project. 
 Note: Be sure to add <link rel="stylesheet" href="styles.css"> in your HTML to link your stylesheet and apply your CSS
 
 EN este momento ya esta todo lo necesario, sin embargo esta más feo que cadaver por fuera y camión de basura por dentro. Es momento de sacar mi artista interior xD.
+
+Eliminando la redundancia
