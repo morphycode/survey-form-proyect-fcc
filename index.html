@@ -25,7 +25,7 @@
         <!--Products-->
         <hr>
         <fieldset class="product">
-          <label><h3>What product did you purchase from us?</h3>
+          <label><h3>What product did you purchase from us?:</h3>
             <select name="dropdown" id="dropdown" required>
               <option value="">(Select a product)</option>
               <option value="personal-computer">Personal Computer</option>
@@ -46,10 +46,13 @@
           <label for="bad" class="inline"><input type="radio" name="excelent-good-notbad-dislike-bad" id="bad" value="bad"><img src="https://em-content.zobj.net/thumbs/120/apple/354/slightly-frowning-face_1f641.webp" alt="Bad" /></label>
         </fieldset>
         <!--Reason to belive-->
-        <textarea name="reason" id="reason" cols="100" rows="5" placeholder="Would you like to share the reason about your anwser?" maxlength="2048" required></textarea>
+        <div class="textarea-container">
+          <textarea name="reason" id="reason" cols="100" rows="5" placeholder="Would you like to share the reason about your anwser?" maxlength="2048" minlength="32" required></textarea>
+        </div>
+        <hr>
         <!--conditions-->
         <fieldset class="conditions">
-          <label for="terms-and-conditions"><input type="checkbox" name="terms" id="terms-and-conditions" value="terms" required /> You are agree with the <a href="terms-privacy.html" target="_blank">terms and conditions</a> and the <a href="terms-privacy.html" target="_blank">privacy politics</a></label>
+            <label for="terms-and-conditions"><input type="checkbox" name="terms" id="terms-and-conditions" value="terms" required /> You are agree with the <a href="terms-privacy.html" target="_blank">terms and conditions</a> and the <a href="terms-privacy.html" target="_blank">privacy politics</a></label>
           <!--Send-->
           <input id="submit" type="submit" value="Submit">
         </fieldset>

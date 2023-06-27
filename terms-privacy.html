@@ -8,21 +8,59 @@
     <style>
         p, h2, h3 {
             text-align: justify;
-            margin-left: 100px;
-            margin-right: 100px;
+            margin: 10px 70px;
+        }
+        /* why not? */
+        @media (max-width: 1000px) {
+            p, h2, h3 {
+            margin: 10px 50px;
+            }
+        }
+        @media (max-width:650px) {
+            p, h2, h3 {
+            margin: 10px 30px;
+            }
+        }
+        @media (max-width:350px) {
+            h1 {
+                font-size: 1.2em;
+            }
+            h2 {
+                font-size: 1em;
+                margin-bottom: -20px;
+                text-align: center;
+            }
+            h3 {
+                font-size: 0.8em;
+                margin: 0 5px;
+                text-align: center;
+            }
+            p {
+                margin: 25px 5px;
+            }
+            #privacy {
+                margin-bottom: 20px;
+            }
         }
     </style>
 </head>
 <body style="background: linear-gradient(90deg, #21f, #71f); color: #fff;">
     <h1 style="font-size: 30px; text-align: center;">PLEASE READ CAREFULLY</h1>
-    <h2 id="terms"><u>Terms and conditions:</u></h2><br>
+    <h2 id="terms"><u>Terms and conditions:</u></h2>
+    <br>
     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est incidunt perspiciatis, ullam sint quibusdam impedit eligendi dolor harum aperiam consectetur illum veritatis quaerat nostrum repellendus inventore ducimus beatae quasi autem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque itaque ipsam et! Ducimus quis voluptate nihil aliquam consectetur et! Sit ipsum quos est aliquid, et itaque provident officiis soluta adipisci!</p>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto earum asperiores delectus iste dolorem qui aliquid dolorum ipsam eveniet culpa natus, fugit libero harum, tempora voluptatem voluptatum exercitationem odio quas! Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis quas, alias aperiam est fugiat saepe consequuntur quia mollitia? Quae itaque omnis repellat rerum obcaecati aliquam unde voluptate perferendis ipsam impedit?</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, dolorem. Sapiente libero veritatis, inventore repellat laboriosam dolor voluptatum debitis eius dicta doloribus, in earum eos dolore beatae voluptatibus, labore laudantium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque assumenda earum ex porro, optio incidunt deleniti unde quo atque, ipsam dolores aperiam, a reiciendis! Doloremque odit obcaecati ducimus fugiat quibusdam.</p><br>
-    <h2><u>Privacy politics:</u></h2><br>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, dolorem. Sapiente libero veritatis, inventore repellat laboriosam dolor voluptatum debitis eius dicta doloribus, in earum eos dolore beatae voluptatibus, labore laudantium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque assumenda earum ex porro, optio incidunt deleniti unde quo atque, ipsam dolores aperiam, a reiciendis! Doloremque odit obcaecati ducimus fugiat quibusdam.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus, hic ducimus? Rerum ipsam voluptates laboriosam deserunt sed. Aliquam distinctio recusandae sapiente numquam doloribus odit, inventore quibusdam quam quas asperiores nisi! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione, officiis? Ut nostrum, reiciendis adipisci doloremque, fuga fugiat facilis officiis porro laudantium nulla, velit voluptas eligendi ipsa fugit sequi cupiditate totam. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur voluptate, vel amet soluta, culpa, natus mollitia cumque totam consectetur quas fugit sequi unde! Ut quaerat aspernatur aliquid et? Voluptas, velit?</p>
+    <br>
+    <h2 id="privacy"><u>Privacy politics:</u></h2><br>
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla, cumque minus laborum, atque temporibus quos accusantium voluptate fugiat perspiciatis laboriosam numquam et eum eius. Deserunt ipsa amet voluptates eius quibusdam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat explicabo aspernatur expedita hic, atque modi quo maiores eligendi vero ipsum esse recusandae aut id consequuntur? At ad repellat sequi atque.</p>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid non minus quasi beatae veritatis facilis! Autem necessitatibus esse ex nisi explicabo exercitationem? Illo distinctio in aut eius dolores totam fugiat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, sint quis impedit, ex est accusamus consequuntur illo repudiandae corporis illum dolores repellat dignissimos dolorum, quod cumque sequi ducimus assumenda minus.</p>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis pariatur sed ipsa repellat, quidem totam magnam possimus modi hic quas, atque tempora? Excepturi adipisci officiis suscipit nihil at ipsa. Sint. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi excepturi delectus atque eaque facere non consectetur animi, perferendis ut corrupti recusandae harum, error, dolorum ab veniam illum impedit laborum. Natus!</p><br>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis pariatur sed ipsa repellat, quidem totam magnam possimus modi hic quas, atque tempora? Excepturi adipisci officiis suscipit nihil at ipsa. Sint. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi excepturi delectus atque eaque facere non consectetur animi, perferendis ut corrupti recusandae harum, error, dolorum ab veniam illum impedit laborum. Natus!</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum at cumque, fugiat inventore molestias debitis doloribus illo qui placeat magnam ex voluptatum beatae dicta ratione, obcaecati, tenetur expedita eius fugit? Lorem ipsum dolor sit amet consectetur 
+    adipisicing elit. Porro blanditiis explicabo error velit perspiciatis sunt accusamus, sed in quisquam eum corrupti, tempora vero. Veritatis distinctio harum quo, totam unde debitis? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam soluta velit quisquam pariatur. Ea cum neque, soluta architecto omnis sequi temporibus ratione deleniti deserunt harum esse expedita aliquid illum aspernatur.</p>
+    <br>
     <h3 id="rules" style="text-align: center;">Now you know the rules of the game...</h3>
+    <br>
 </body>
 </html>
