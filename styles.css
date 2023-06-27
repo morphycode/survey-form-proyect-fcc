@@ -9,11 +9,12 @@ body {
     background: linear-gradient(135deg, #000, rgb(6, 96, 6), #000);
     background-repeat: no-repeat;
     width: 100%;
-    /*height: 200vh;*/
+    height: 240%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #000;
     display: flex;
     justify-content: center;
+    font-size: 3vh;
 }
 
 section {
@@ -34,7 +35,8 @@ h1 {
 
 h3 {
     color: rgb(211, 233, 211);
-    letter-spacing: 2pt;
+    letter-spacing: 1pt;
+    font-size: 1rem;
 }
 
 #description {
@@ -116,7 +118,7 @@ figcaption {
 }
 
 input[type="radio"]:checked {
-    box-shadow: 0 0 0 3px lightgreen;
+    box-shadow: 0 0 0 3px rgb(255, 255, 255);
 }  
 
 label > img {
@@ -127,21 +129,27 @@ label > img {
 
 .textarea-container {
     width: 100%;
-    max-height: 150px; /* Establece el límite de altura deseado */
+    max-height: 180px; /* Establece el límite de altura deseado */
     overflow-y: auto; /* Añade una barra de desplazamiento vertical si es necesario */
 }
 
 textarea {
-    min-width: 50%;
+    min-width: 100%;
     max-width: 100%;
     background-color: rgb(34, 34, 34);
     font-size: 1rem;
 }
 
 /* Checkbox button style */
-label[for="terms-and-conditions"] {
-    text-align: center;
-    margin: 7px auto 0 auto;
+label[for="terms-and-conditions"], label[for="privacy-politics"] {
+    margin: 7px auto 0 0;
+    display: inline;
+    width: 90%;
+}
+
+input[type="checkbox"] {
+    margin: 7px auto 0 20%;
+    display: inline;
 }
 
 a {
@@ -153,7 +161,7 @@ label[for="terms-and-conditions"] > a:hover, a:visited {
 }
 
 input[type="checkbox"]:checked {
-    box-shadow: 0 0 0 3px lightgreen;
+    box-shadow: 0 0 0 3px rgb(255, 255, 255);
 }
 
 #dropdown {
@@ -187,10 +195,10 @@ input[type="submit"]:hover {
 
 /* some not perfect responsive desing*/
 
-@media (max-width: 300px) {
+@media (max-width: 450px) {
     body {
-        height: 100%;
-        font-size: 12px;
+        height: 250%;
+        font-size: 15px;
     }
     h1 {
         margin-top: 30px;
@@ -198,6 +206,9 @@ input[type="submit"]:hover {
     }
     #description {
         font-size: 1.5em;
+    }
+    h3 {
+        font-size: 1em;
     }
     section {
         color: #000;
@@ -218,10 +229,41 @@ input[type="submit"]:hover {
         background-color: rgb(34, 34, 34);
         font-size: 1rem;
     }
+
+    label[for="terms-and-conditions"], label[for="privacy-politics"] {
+        margin: 7px 0 0 1%;
+        display: inline;
+        width: 90%;
+    }
+
+    input[type="checkbox"] {
+        margin: 7px 0 0 1%;
+        display: inline;
+    }
 }
-/*
-@media (max-width:650px) {
-    #title {
+
+@media (max-width:1100px) {
+
+    input[type="checkbox"] {
+        margin: 7px auto 0 15%;
+        display: inline;
+    }
+}
+
+@media (max-width:950px) {
+    input[type="checkbox"] {
+        margin: 7px auto 0 10%;
+        display: inline;
+    }
+}
+
+@media (max-width:850px) {
+    input[type="checkbox"] {
+        margin: 7px auto 0 0;
+        display: inline;
+    }
+}
+    /* #title {
         font-size: 1.2rem;
         margin: 30px auto 10px auto;
     }
