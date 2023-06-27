@@ -1,0 +1,337 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A survey form to gather feedback and improve our services.">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <section>
+      <!--Title h1 and description-->
+      <h1 id="title"><u>Survey Form</u></h1>
+      <p id="description"><em>Could you lend us a hand to improve things?</em></p>
+      <!--Survey Form-->
+      <hr>
+      <form action="" id="survey-form">
+        <!--user-->
+        <fieldset class="user">
+          <figcaption><h3>First, we need some data to indetified you:</h3></figcaption>
+          <label id="name-label" for="name">Fullname: </label><input type="text" id="name" name="fullname" placeholder="Jhon Smith" required />
+          <label id="email-label" for="email">Email: </label><input type="email" id="email" name="email" placeholder="example@example.com" required />
+          <label id="number-label" for="number">Age: </label><input type="number" id="number" min="16" max="120" name="age" placeholder="33" value="age" required />
+        </fieldset>
+        <!--Products-->
+        <hr>
+        <fieldset class="product">
+          <label><h3>What product did you purchase from us?:</h3>
+            <select name="dropdown" id="dropdown" required>
+              <option value="">(Select a product)</option>
+              <option value="personal-computer">Personal Computer</option>
+              <option value="laptop">Laptop</option>
+              <option value="smartphone">Smartphone</option>
+              <option value="iotdevice">IoT device</option>
+            </select>
+          </label>
+        </fieldset>
+        <!--inputs type radio-->
+        <hr>
+        <h3 style="text-align: center;">Are you satisface with our service?</h3>
+        <fieldset class="quality-service">
+          <label for="excelent" class="inline"><input type="radio" name="excelent-good-notbad-dislike-bad" id="excelent" value="excelent" checked><img src="https://em-content.zobj.net/thumbs/120/apple/354/grinning-squinting-face_1f606.webp" alt="Very good" /></label>
+          <label for="good" class="inline"><input  type="radio" name="excelent-good-notbad-dislike-bad" id="good" value="good"><img src="https://em-content.zobj.net/thumbs/120/apple/354/slightly-smiling-face_1f642.webp" alt="Good" /></label>
+          <label for="notbad" class="inline"><input type="radio" name="excelent-good-notbad-dislike-bad" id="notbad" value="notbad"><img src="https://em-content.zobj.net/thumbs/120/apple/354/neutral-face_1f610.webp" alt="Not bad" /></label>
+          <label for="dislike" class="inline"><input type="radio" name="excelent-good-notbad-dislike-bad" id="dislike" value="dislike"><img src="https://em-content.zobj.net/thumbs/120/apple/354/unamused-face_1f612.webp" alt="Could be better" /></label>
+          <label for="bad" class="inline"><input type="radio" name="excelent-good-notbad-dislike-bad" id="bad" value="bad"><img src="https://em-content.zobj.net/thumbs/120/apple/354/slightly-frowning-face_1f641.webp" alt="Bad" /></label>
+        </fieldset>
+        <!--Reason to belive-->
+        <div class="textarea-container">
+          <textarea name="reason" id="reason" cols="100" rows="5" placeholder="Would you like to share the reason about your anwser?" maxlength="2048" minlength="32" required></textarea>
+        </div>
+        <hr>
+        <!--conditions-->
+        <input type="checkbox" name="terms" id="terms-and-conditions" value="terms" required /><label for="terms-and-conditions"> Click here if you are agree with the <a href="terms-privacy.html" target="_blank">terms and conditions</a></label>
+        <br>
+        <input type="checkbox" name="terms" id="privacy-politics" value="terms" required /><label for="privacy-politics"> Click here if you are agree with the <a href="terms-privacy.html" target="_blank">privacy politics</a></label>
+        <!--Send-->
+        <input id="submit" type="submit" value="Submit">
+      </form>
+    </section>
+  </body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+* {
+    padding: 0;
+    margin: 0;
+    color: #fff;
+}
+
+body {
+    /*background: linear-gradient(90deg, #21f, #71f);*/
+    background: linear-gradient(135deg, #000, rgb(6, 96, 6), #000);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 240%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    font-size: 3vh;
+}
+
+section {
+    width: 60%;
+    background-color: rgba(60, 120, 60, 40%);
+    /* box-shadow: 0 0 300px #a1a1a1; */
+    padding: 20px 50px;
+    margin: 50px 0;
+}
+
+/*title and description*/
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-bottom: 10px;
+}
+
+h3 {
+    color: rgb(211, 233, 211);
+    letter-spacing: 1pt;
+    font-size: 1rem;
+}
+
+#description {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/*form*/
+form {
+    color: white;
+    background: none;
+    margin: auto;
+    border: none;
+}
+
+/*fieldset*/
+fieldset {
+    border-style: none;
+    margin: 10px 0;
+}
+
+label {
+    width: 100%;
+    margin: 0.7rem 0;
+    display: block;
+    font-size: 1em;
+}
+
+hr {
+    background-color: none;
+    border: 1px solid rgb(40, 140, 40)/* rgb(0, 255, 106) */;
+    margin: 20px 0;
+}
+
+select, option {
+    color: black;
+    background-color: azure;
+}
+
+/* figcaption general */
+figcaption {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* User data*/
+.user {
+    width: 80%;
+    margin: auto;
+}
+.user > input {
+    width: 100%;
+    background-color: rgb(34, 34, 34);
+}
+
+/* Product */
+.product {
+    text-align: center;
+    margin: 1em auto;
+}
+
+.product > label > h3{
+    display: inline;
+    letter-spacing: 0.1pt;
+}
+
+/* quality-service */
+.quality-service {
+    display: flex;
+    justify-content: space-evenly;
+    letter-spacing: 2pt;
+}
+
+/* Radio button style */
+.inline {
+    text-align: center;
+    width: 19%;
+}
+
+input[type="radio"]:checked {
+    box-shadow: 0 0 0 3px rgb(255, 255, 255);
+}  
+
+label > img {
+    width: 100%;
+}
+
+/*textarea*/
+
+.textarea-container {
+    width: 100%;
+    max-height: 180px; /* Establece el límite de altura deseado */
+    overflow-y: auto; /* Añade una barra de desplazamiento vertical si es necesario */
+}
+
+textarea {
+    min-width: 100%;
+    max-width: 100%;
+    background-color: rgb(34, 34, 34);
+    font-size: 1rem;
+}
+
+/* Checkbox button style */
+label[for="terms-and-conditions"], label[for="privacy-politics"] {
+    margin: 7px auto 0 0;
+    display: inline;
+    width: 90%;
+}
+
+input[type="checkbox"] {
+    margin: 7px auto 0 20%;
+    display: inline;
+}
+
+a {
+    color:rgb(40, 200, 40);
+}
+
+label[for="terms-and-conditions"] > a:hover, a:visited {
+    color: #0f0;
+}
+
+input[type="checkbox"]:checked {
+    box-shadow: 0 0 0 3px rgb(255, 255, 255);
+}
+
+#dropdown {
+    margin-left: 15px;
+}
+
+/* button style */
+input[type="submit"] {
+    margin: 25px auto 10px auto;
+    width: 55%;
+    height: 50px;
+    background-color: rgb(34, 34, 34);
+    border-radius: 10px;
+    border: 2px solid #000;
+    box-shadow: 0 0 5px #000;
+    transition: 1s;
+    color: #fff;
+    font-size: 1em;
+    display: block;
+}
+
+input[type="submit"]:hover {
+    color: #000;
+    transition: 0.7s;
+    background-color: #fff;
+    border: 2px solid #000;
+    box-shadow: 0 0 5px #0f0;
+    font-size: 1.5em;
+    text-decoration: underline;
+}
+
+/* some not perfect responsive desing*/
+
+@media (max-width: 450px) {
+    body {
+        height: 250%;
+        font-size: 15px;
+    }
+    h1 {
+        margin-top: 30px;
+        font-size: 2em;
+    }
+    #description {
+        font-size: 1.5em;
+    }
+    h3 {
+        font-size: 1em;
+    }
+    section {
+        color: #000;
+        background-color: rgba(60, 120, 60, 40%);
+        width: 90%;
+        border: none;
+        padding: 5px;
+    }
+    .textarea-container {
+        margin: auto;
+        max-height: 150px;
+        width: 90%;
+        overflow-y: auto;
+    }
+    
+    textarea {
+        max-width: 100%;
+        background-color: rgb(34, 34, 34);
+        font-size: 1rem;
+    }
+
+    label[for="terms-and-conditions"], label[for="privacy-politics"] {
+        margin: 7px 0 0 1%;
+        display: inline;
+        width: 90%;
+    }
+
+    input[type="checkbox"] {
+        margin: 7px 0 0 1%;
+        display: inline;
+    }
+}
+
+@media (max-width:1100px) {
+
+    input[type="checkbox"] {
+        margin: 7px auto 0 15%;
+        display: inline;
+    }
+}
+
+@media (max-width:950px) {
+    input[type="checkbox"] {
+        margin: 7px auto 0 10%;
+        display: inline;
+    }
+}
+
+@media (max-width:850px) {
+    input[type="checkbox"] {
+        margin: 7px auto 0 0;
+        display: inline;
+    }
+}
+
+** end of undefined **
+
