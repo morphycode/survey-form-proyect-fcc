@@ -224,7 +224,9 @@ input[type="submit"]:hover {
         font-size: 1rem;
     }
 }
-/*
+
+/* "In this part, you can find a large CSS comment. Please, do not remove the comment."
+
 @media (max-width:1100px) {
 
     input[type="checkbox"] {
@@ -246,7 +248,7 @@ input[type="submit"]:hover {
         display: inline;
     }
 }
-    /* #title {
+    #title {
         font-size: 1.2rem;
         margin: 30px auto 10px auto;
     }
@@ -260,14 +262,14 @@ input[type="submit"]:hover {
     }
     section {
         width: 80%;
-        /*border: 5px solid rgb(0, 0, 0);
+        border: 5px solid rgb(0, 0, 0);
         border-radius: 30px;
         background-color: rgba(60, 120, 60, 40%);
-        /*background: linear-gradient(135deg, #000, rgb(6, 66, 6), #000);
+        background: linear-gradient(135deg, #000, rgb(6, 66, 6), #000);
         box-shadow: 0 0 300px #a1a1a1;
         height: 80%;
         color: #000;
-        /*background-color: rgba(60, 120, 60, 40%);
+        background-color: rgba(60, 120, 60, 40%);
         width: 90%;
         margin: auto;
         border: none;
@@ -290,4 +292,4 @@ input[type="submit"]:hover {
         max-width: 200px;
         max-height: 250px;
     }
-} 
+} */
