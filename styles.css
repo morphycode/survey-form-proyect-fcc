@@ -146,11 +146,6 @@ label[for="terms-and-conditions"] /*, label[for="privacy-politics"] */{
     text-align: center;
 }
 
-input[type="checkbox"] {
-    margin: 7px auto;
-    display: inline;
-}
-
 a {
     color:rgb(40, 200, 40);
 }
