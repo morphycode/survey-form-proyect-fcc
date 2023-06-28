@@ -14,7 +14,7 @@
       <p id="description"><em>Could you lend us a hand to improve things?</em></p>
       <!--Survey Form-->
       <hr>
-      <form action="" id="survey-form">
+      <label action="" id="survey-form">
         <!--user-->
         <fieldset class="user">
           <figcaption><h3>First, we need some data to indetified you:</h3></figcaption>
@@ -51,9 +51,9 @@
         </div>
         <hr>
         <!--conditions-->
-        <input type="checkbox" name="terms" id="terms-and-conditions" value="terms" required /><label for="terms-and-conditions"> Click here if you are agree with the <a href="terms-privacy.html" target="_blank">terms and conditions</a></label>
-        <br>
-        <input type="checkbox" name="terms" id="privacy-politics" value="terms" required /><label for="privacy-politics"> Click here if you are agree with the <a href="terms-privacy.html" target="_blank">privacy politics</a></label>
+        <fieldset class="conditions">
+          <label for="terms-and-conditions"><input type="checkbox" name="terms" id="terms-and-conditions" value="terms" required /> Click here if you are agree with the <a href="terms-privacy.html" target="_blank">terms and conditions</a> and the <a href="terms-privacy.html" target="_blank">privacy politics</a></label>
+        </fieldset>
         <!--Send-->
         <input id="submit" type="submit" value="Submit">
       </form>
