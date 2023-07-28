@@ -437,10 +437,11 @@ textarea {
 }
 
 /* Checkbox button style */
-/*.quality-service[for="terms-and-conditions"], label[for="privacy-politics"] {
-    margin: 7px auto 0 0;
-    display: inline;
-    width: 90%;
+/*
+
+label[for="terms-and-conditions"], label[for="privacy-politics"] {s*/
+  /*margin: 7px auto 0 auto;
+  text-align: center;
 }
 
 input[type="checkbox"] {
